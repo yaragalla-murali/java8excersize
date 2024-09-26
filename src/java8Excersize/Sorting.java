@@ -21,9 +21,6 @@ public class Sorting {
         });
         System.out.println("Sorted with Java 7: " + names);
     }
-   
-
-    
     
     public static void main(String... args) {
     	// java 8 solution
@@ -32,5 +29,10 @@ public class Sorting {
         System.out.println(sortedList);
     }
 
-
+    //another option for in place sorting
+    public static void sorting() {
+        List<String> names = Arrays.asList("John", "Jane", "Tom", "Lucy");
+        names.sort(String::compareTo);
+        System.out.println("Sorted with Java 7: " + names);
+    }
 }
