@@ -5,15 +5,12 @@ import java.math.BigDecimal;
 public class Player {
 	
 	private String name;
-	
-	public Player(String name) {
-		this.name=name;
-	}
-
-	
 	private BigDecimal currentAmount=new BigDecimal(1000);
 	private Integer currentPosition=0;
 	
+	public Player(String name) {
+		this.name=name;
+	}	
 	
 	public BigDecimal getCurrentAmount() {
 		return currentAmount;
